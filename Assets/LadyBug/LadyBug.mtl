@@ -1,0 +1,12 @@
+newmtl Black
+Kd 0 0 0
+d 1
+
+newmtl Default
+Kd 0.745283 0.03593305 0.01054644
+d 1
+
+newmtl White
+Kd 1 1 1
+d 1
+

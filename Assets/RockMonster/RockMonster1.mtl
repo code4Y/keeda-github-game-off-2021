@@ -1,0 +1,20 @@
+newmtl Gray
+Kd 0.4622642 0.4622642 0.4622642
+d 1
+
+newmtl Green
+Kd 0.07578897 1 0
+d 1
+
+newmtl Black
+Kd 0 0 0
+d 1
+
+newmtl LightGray
+Kd 0.8301887 0.8301887 0.8301887
+d 1
+
+newmtl Blue
+Kd 0 1 0.9288096
+d 1
+
