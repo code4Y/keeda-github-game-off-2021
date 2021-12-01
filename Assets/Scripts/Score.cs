@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using TMPro;    // to use text mesh pro
 
 public class Score : MonoBehaviour {
 

@@ -18,6 +18,10 @@ public class VectorLerp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        // to provide a smooth & dynamic movement to our stone monsters
+        // as they can float
+
         transform.position = Vector3.Lerp(transform.position,myPos[posIndex],lerpTime*Time.deltaTime);
 
         t = Mathf.Lerp(t, 1f, lerpTime * Time.deltaTime);

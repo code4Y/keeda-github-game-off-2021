@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour {
     public static AudioManager instance;
 
 	// Use this for initialization
-	void Awake ()
+	void Awake ()           // used to keep only one instance of music
     {   
         if (instance == null)
             instance = this;
@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour {
 
     void Start()
     {
-        Play("Theme");
+        Play("Theme");      //Plays the music
     }
 
     public void Play(string name)

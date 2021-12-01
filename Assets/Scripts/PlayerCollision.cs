@@ -4,10 +4,9 @@ public class PlayerCollision : MonoBehaviour {
 
     public PlayerMovement movement;
     // public GameManager gameManager;  Don't use this, Not good
-
-    // public float jumpForce = 500f;
+   
     public Rigidbody rb;
-    void OnCollisionEnter(Collision collisionInfo)       // func already Exists so be careful
+    void OnCollisionEnter(Collision collisionInfo)       // predef func already Exists so be careful
     {
         if (collisionInfo.collider.tag == "Obstacle")
         {
@@ -41,11 +40,6 @@ public class PlayerCollision : MonoBehaviour {
 
             FindObjectOfType<AudioManager>().Play("WaterSplash");
         }
-        /*
-        if (collisionInfo.collider.tag == "Jumper")
-        {
-            rb.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.VelocityChange);
-        }
-        */
+       
     }
 }

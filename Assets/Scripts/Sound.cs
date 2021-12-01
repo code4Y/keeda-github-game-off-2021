@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Sound {
+public class Sound {    // tool to create list of audio used
 
     public string name;
 

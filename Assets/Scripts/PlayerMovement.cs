@@ -9,30 +9,24 @@ public class PlayerMovement : MonoBehaviour {
     public float sidewaysForce = 500f;
 
     // We marked it as "Fixed"Update because
-	// We are using it to mess with physics.
+	// We are using it to deal with physics.
 	void FixedUpdate ()
     {
         // Add a forward force on the z-axis
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
-        //rb.freezeRotation = true;
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d"))          // assign 'D' to move right
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a"))           // assign 'A' to move left
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        /*
-        if (Input.GetKey("w"))
-        {
-            rb.AddForce(0, 50f * Time.deltaTime, 0, ForceMode.VelocityChange);
-        }
-        */
-        if (rb.position.y < 0f)
+
+        if (rb.position.y < 0f)          // end game if player falls below the main ground
         {
             FindObjectOfType<GameManager>().EndGame();
         }
